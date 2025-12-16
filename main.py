@@ -67,5 +67,3 @@ operators = (operator.add, operator.sub, operator.mul, operator.truediv, lambda 
 start_numbers = tuple(map(int, input('Starting numbers: ').split()))
 goal = int(input('Goal: '))
 solve(start_numbers, goal)
-
-print("hi")
