@@ -63,7 +63,8 @@ def solve(start_numbers, goal, operators):
                     cache.add(Qs)
                     stack.append(Q)
 
-operators = (operator.add, operator.sub, operator.mul, operator.truediv, lambda a, b: b - a, lambda a, b: b/a)
-start_numbers = tuple(map(int, input('Starting numbers (Use \' \' as a delimiter): ').split()))
-goal = int(input('Goal: '))
-solve(start_numbers, goal)
+if __name__ == "__main__":
+    operators = (operator.add, operator.sub, operator.mul, operator.truediv, lambda a, b: b - a, lambda a, b: b/a)
+    start_numbers = tuple(map(int, input('Starting numbers (Use \' \' as a delimiter): ').split()))
+    goal = int(input('Goal: '))
+    solve(start_numbers, goal, operators)
